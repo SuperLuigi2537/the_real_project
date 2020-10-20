@@ -1,9 +1,31 @@
 namespace SpriteKind {
     export const Boos = SpriteKind.create()
 }
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+    missile = sprites.createProjectileFromSprite(img`
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . 6 7 7 7 7 . . . . . 
+        . . . . 7 6 6 . . . . . . . . . 
+        . 7 7 7 . . . . . . . . . . . . 
+        . 7 6 6 . . 7 6 6 7 . . . . . . 
+        . 7 7 6 . . 7 6 . 7 . . . . . . 
+        . . 7 6 . . . . 7 . . . . . . . 
+        . . 7 7 . . . . 7 . . . . . . . 
+        . . . 7 7 7 7 7 7 . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        `, spaceship, 0, -100)
+})
 let Boos_life = 0
 let big_boos: Sprite = null
-let spaceship = sprites.create(img`
+let missile: Sprite = null
+let spaceship: Sprite = null
+spaceship = sprites.create(img`
     . . . . . 1 1 1 1 1 . . . . . . 
     . . . . 1 1 1 1 1 1 1 1 1 . . . 
     . . . . 7 7 7 4 4 7 4 . . . . . 
@@ -81,7 +103,7 @@ let astro_list = [img`
 let astro_speed = 0
 let astro_pos = 0
 game.onUpdate(function () {
-    if (true) {
+    if (0 < 0) {
     	
     } else if (false) {
     	

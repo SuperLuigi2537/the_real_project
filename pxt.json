@@ -2,7 +2,8 @@
     "name": "The_real_project",
     "description": "",
     "dependencies": {
-        "device": "*"
+        "device": "*",
+        "programering project": "github:superluigi2537/programering-project#master"
     },
     "files": [
         "main.blocks",
